@@ -1,0 +1,13 @@
+<h2>Novo Produto</h2>
+<form (ngSubmit)="salvar()">
+  <label>Nome:
+    <input [(ngModel)]="produto.nome" name="nome" required />
+  </label><br />
+
+  <label>Ativo:
+    <input type="checkbox" [(ngModel)]="produto.ativo" name="ativo" />
+  </label><br />
+
+  <button type="submit">Salvar</button>
+</form>
+
